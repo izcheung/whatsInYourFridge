@@ -23,28 +23,33 @@
 
 </head>
 <body>
-    <div id="search_box" class="d-flex flex-column align-items-center container">
-        <h1 class="single_day">What's for dinner today?</h1>
+    <div id="search_box" class="d-flex flex-column align-items-center container slides">
+        <h1 class="single_day">What's in your fridge?</h1>
         <div>
             <form>
                 <input id="query_input">
-                <input type="button" id="submit_button" onclick="search_recipes()">
+                <input type="button" id="submit_button" onclick="search_recipes()" hidden>
             </form>
         </div>
     </div>
 
-    <div id="results"></div>    
+    <div id="results" class="slides">
+        
+    </div>    
 
-    <dialog id="modal"></div>
+    <dialog id="modal">
         <div class="modal_header">
-            <h2 class="modal_title">Title</h2>
             <button id="close_modal" onclick="close_modal()">&times;</button>
         </div>
-        <p id="modal_body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt dignissimos optio, aut voluptas ipsa mollitia odit, inventore facere consectetur, necessitatibus laboriosam tempora similique commodi sapiente placeat sunt repudiandae fugiat explicabo minima illum velit pariatur neque ea. Impedit minus laboriosam minima ut itaque veritatis, ab aperiam. Iusto harum commodi excepturi architecto.
-        </p>
+        <h2 id="modal_title"></h2>
+        <p id="modal_summary"></p>
+        <h3>Ingredients: </h3>
+        <p id="modal_ingredients"></p>
+        <p id="modal_body"></p>
         <div id="overlay"></div>
     </dialog>
 
+    <script src="pagination.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
