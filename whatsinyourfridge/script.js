@@ -115,13 +115,18 @@ function displayIngredients(recipeId){
             url: `https://api.spoonacular.com/recipes/${recipeId}/information?apiKey=35119e298b824e7481b7febdf3fabcaa`,
             type: 'GET',
             success: function(recipeIngredients){
-                console.log(recipeIngredients)
-                ingredients = '';
-                for(i=0; i < recipeIngredients.extendedIngredients.length ; i++){
-                    ingredients += recipeIngredients.extendedIngredients[i].name
+                console.log(recipeIngredients);
+
+                ingredients = document.createElement('ul')
+
+                for (let i = 0; i < recipeIngredients.extendedIngredients.length; i++) {
+                    // Corrected the creation of li element
+                    const li = document.createElement('li')
+                    li.append(recipeIngredients.extendedIngredients[i].name)
+                    ingredients.append(li) // Concatenate the HTML of li to ingredients
                 }
-                
-                $('#modal_ingredients').html(ingredients)
+
+                $('#modal_ingredients').html(ingredients);
             }
             })
         
