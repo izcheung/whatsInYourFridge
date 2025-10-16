@@ -13,7 +13,7 @@ I built this project as a hands-on way to learn JavaScript, jQuery, and API inte
 
 ## Requirements
 
-- This application requires a Spoonacular API key. The current implementation uses a demo key with limited requests. For production use, obtain your own API key from [Spoonacular](https://spoonacular.com/food-api).
+This application requires a Spoonacular API key. The current implementation uses a demo key with limited requests. For production use, obtain your own API key from [Spoonacular](https://spoonacular.com/food-api).
 
 ## Tech Stack
 
@@ -41,7 +41,7 @@ git clone https://github.com/izcheung/whatsInYourFridge.git
 cd whatsInYourFridge
 ```
 
-Right-click index.html → “Open with Live Server”
+Right-click `index.html` → Click “Open with Live Server”
 
 ## Acknowledgments
 
