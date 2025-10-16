@@ -3,6 +3,16 @@
 ![What's In Your Fridge Screenshot](./screenshots/frontpage.png)
 ![Recipe Modal Screenshot](./screenshots/results.png)
 
+## Table of Contents
+
+1. [Summary](#summary)
+2. [Motivation](#motivation)
+3. [Requirements](#requirements)
+4. [Tech Stack](#tech-stack)
+5. [Quick Start](#quick-start)
+6. [Features](#features)
+7. [Acknowledgements](#acknowledgements)
+
 ## Summary
 
 "What's In Your Fridge?" is a web application that helps users reduce food waste by suggesting recipes based on ingredients they currently have available. Users can input their available ingredients and receive recipe suggestions powered by the Spoonacular API, complete with cooking instructions, ingredient lists, and nutritional information.
@@ -21,17 +31,6 @@ This application requires a Spoonacular API key. The current implementation uses
 - **Styling**: Bootstrap, CSS
 - **API Integration**: Spoonacular Recipe API
 
-## Features
-
-- **Ingredient Input**: Enter multiple ingredients separated by commas
-- **Recipe Search**: Instant recipe suggestions based on available ingredients
-- **Detailed Recipe Information**: Click any recipe to view:
-  - Complete ingredient lists
-  - Step-by-step cooking instructions
-  - Recipe summaries and descriptions
-- **Responsive Design**: Optimized for both desktop and mobile devices
-- **API Integration**: Integration with Spoonacular's recipe database
-
 ## Quick Start
 
 Clone the repository:
@@ -43,6 +42,17 @@ cd whatsInYourFridge
 
 Right-click `index.html` → Click “Open with Live Server”
 
-## Acknowledgments
+## Features
+
+- **Ingredient Input**: Enter multiple ingredients separated by commas
+- **Recipe Search**: Instant recipe suggestions based on available ingredients
+- **Detailed Recipe Information**: Click any recipe to view:
+  - Complete ingredient lists
+  - Step-by-step cooking instructions
+  - Recipe summaries and descriptions
+- **Responsive Design**: Optimized for both desktop and mobile devices
+- **API Integration**: Integration with Spoonacular's recipe database
+
+## Acknowledgements
 
 Powered by the Spoonacular API for recipe and ingredient data.
