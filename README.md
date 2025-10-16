@@ -1,38 +1,48 @@
-# What's in your fridge?
+# What's In Your Fridge?
 
-![alt text](image.png)
-![alt text](image-1.png)
+![What's In Your Fridge Screenshot](./screenshots/frontpage.png)
+![Recipe Modal Screenshot](./screenshots/results.png)
 
 ## Summary
 
-"What's in Your Fridge?" web application allows users to input ingredients they currently have in their fridge and receive personalized recipe suggestions based on those ingredients by leveraging the Spoonacular API.
-
-## Technologies
-
-- JavaScript
-- jQuery
-- HTML
-- CSS
-- Bootstrap
-
-## Features
-
-- **Ingredient Input**: Users can enter a list of ingredients they have in their fridge.
-- **Recipe Suggestions**: After submitting their ingredients, users are provided with customized recipe suggestions from the Spoonacular API.
-- **Modal Display**: Click on a recipe to view more details in a modal window, such as instructions, servings, and nutritional information.
-- **User-Friendly Interface**: A clean, responsive design that works across devices, ensuring a smooth experience whether on mobile or desktop.
-- **API Integration**: Integrated Spoonacular API to fetch real-time recipe data based on user input.
-
-## How it works
-
-1. On the homepage, type in the ingredients you currently have in your fridge. Separate each ingredient with a comma (e.g., chicken, tomatoes)
-2. Press enter
-3. View Recipes!
+"What's In Your Fridge?" is a web application that helps users reduce food waste by suggesting recipes based on ingredients they currently have available. Users can input their available ingredients and receive recipe suggestions powered by the Spoonacular API, complete with cooking instructions, ingredient lists, and nutritional information.
 
 ## Motivation
 
-This project was mainly a way for me to practice and improve my JavaScript, jQuery, and web design skills. The problem I chose to focus on is one I often run into myself, which is letting food go to waste because I did not know how to use it with my existing ingredients. The app addresses this by helping users reduce waste by suggesting recipes based on the ingredients they already have.
+I built this project as a hands-on way to learn JavaScript, jQuery, and API integration by turning an issue I encounter from my daily life into a coding project.
+
+## Requirements
+
+- This application requires a Spoonacular API key. The current implementation uses a demo key with limited requests. For production use, obtain your own API key from [Spoonacular](https://spoonacular.com/food-api).
+
+## Tech Stack
+
+- **Frontend**: HTML5, JavaScript, jQuery
+- **Styling**: Bootstrap, CSS
+- **API Integration**: Spoonacular Recipe API
+
+## Features
+
+- **Ingredient Input**: Enter multiple ingredients separated by commas
+- **Recipe Search**: Instant recipe suggestions based on available ingredients
+- **Detailed Recipe Information**: Click any recipe to view:
+  - Complete ingredient lists
+  - Step-by-step cooking instructions
+  - Recipe summaries and descriptions
+- **Responsive Design**: Optimized for both desktop and mobile devices
+- **API Integration**: Integration with Spoonacular's recipe database
+
+## Quick Start
+
+Clone the repository:
+
+```
+git clone https://github.com/izcheung/whatsInYourFridge.git
+cd whatsInYourFridge
+```
+
+Right-click index.html → “Open with Live Server”
 
 ## Acknowledgments
 
-- Spoonacular API: For providing the recipe data.
+Powered by the Spoonacular API for recipe and ingredient data.
